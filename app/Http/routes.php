@@ -12,9 +12,7 @@
 */
 //phpinfo();
 //Route::get('/', 'WelcomeController@index');
-echo 'heree';
-echo 'there';
-echo 'there';
+
 //use Symfony\Component\HttpKernel\HttpCache\Store;
 //
 //class a
@@ -33,15 +31,15 @@ echo 'there';
 //    }
 //}
 //
-//Route::get('/', function () {
-//    return 'foo';
-//});
-//Route::get('/hello', function () {
-//    return View::make(hello);
-//});
-////Route::get('home', 'HomeController@index');
-//
-//Route::controllers([
-//    'auth' => 'Auth\AuthController',
-//    'password' => 'Auth\PasswordController',
-//]);
+Route::get('/', function () {
+    return 'foo';
+});
+Route::get('/hello', function () {
+    return 'hello';
+});
+//Route::get('home', 'HomeController@index');
+
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
+]);
