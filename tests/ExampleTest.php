@@ -17,7 +17,7 @@ class ExampleTest extends TestCase {
 	}
     public function testHello()
     {
-        $response = $this->call('GET', '/hello');
+        $response = $this->call('GET', '/contact');
 
         $this->assertEquals(200, $response->getStatusCode());
 

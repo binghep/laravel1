@@ -10,10 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-//phpinfo();
-//Route::get('/', 'WelcomeController@index');
-
-//use Symfony\Component\HttpKernel\HttpCache\Store;
+use \App\Http\Controllers\WelcomeController;
 //
 //class a
 //{
@@ -31,13 +28,18 @@
 //    }
 //}
 //
-Route::get('/', function () {
-    return 'foo';
-});
-Route::get('/hello', function () {
-    return 'hello';
-});
-//Route::get('home', 'HomeController@index');
+Route::get('/', 'WelcomeController@index');
+
+Route::get('contact', 'PagesController@contact');
+Route::get('about', 'PagesController@about');
+Route::get('third', 'PagesController@third');
+Route::get('fourth', 'PagesController@fourth');
+Route::get('fifth', 'PagesController@fifth');
+
+Route::get('sixth', 'PagesController@sixth');
+
+
+Route::get('home', 'HomeController@index');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
