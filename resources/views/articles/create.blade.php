@@ -30,12 +30,12 @@
         {!! Form::textarea('body', null, ['class'=>'form-control']) !!}
     </div>
 
-    <!-- Password Form Input -->
+    <!-- Published_at Form Input -->
     <div class="form-group">
-        {!! Form::label('password','Password:') !!}
-        {!! Form::password('password', ['class'=>'form-control']) !!}
+        {!! Form::label('published_at','Published On:') !!}
+        {!! Form::input('date','published_at', date('Y-m-d'), ['class'=>'form-control']) !!}
     </div>
-    
+
     <!-- Add Article Form Input-->
     <div class="form-group">
         {!! Form::submit('Add Article',['class'=>'btn btn-primary form-control']) !!}
