@@ -14,7 +14,9 @@ class ArticlesController extends Controller
         date_default_timezone_set("America/Los_Angeles");
         //$articles=Article::all();                         //this is in ascending order
         //$articles = Article::latest('published_at')->get(); //this is sort by published_at column in descending order
-        $articles = Article::latest('published_at')->published()->get();
+        //$articles = Article::latest('published_at')->published()->get();
+        $articles = Article::latest()->get();  //sort by created_at desc
+
         //return $articles; //the browser displays valid json array
         return view('articles.index', compact('articles'));
     }
@@ -54,6 +56,7 @@ class ArticlesController extends Controller
 //        $article=new Article;
 //        $article->title=$title;
 //        $article->body=$body;
+        $request['published_at']=Carbon::now();
         Article::create($request->all());
         return redirect('articles');
     }
@@ -61,6 +64,7 @@ class ArticlesController extends Controller
     public function edit($id)
     {
         $article = Article::findOrFail($id);
+        //dd($article);
         return view('articles.edit', compact('article'));
     }
 

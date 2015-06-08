@@ -10,7 +10,7 @@
                 {{--<a href="/articles/{{$article->id}}">{{$article->title}}</a>--}}
                 <a href="{{action('ArticlesController@show', [$article->id])}}">{{$article->title}}</a>
             </h2>
-            <span>  {{$article->published_at}}</span>
+            <span style="color:grey">  Creation Date: {{$article->created_at}}</span>
 
             <div class="body">
                 {{$article->body}}
