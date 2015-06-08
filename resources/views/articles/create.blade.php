@@ -33,6 +33,7 @@
     <!-- Published_at Form Input -->
     <div class="form-group">
         {!! Form::label('published_at','Published On:') !!}
+        {{--date('Y-m-d')--}}
         {!! Form::input('date','published_at', date('Y-m-d'), ['class'=>'form-control']) !!}
     </div>
 
@@ -42,4 +43,13 @@
     </div>
 
     {!! Form::close() !!}
+
+    {{--{{var_dump($errors)}}--}}
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </div>
+    @endif
 @endsection
