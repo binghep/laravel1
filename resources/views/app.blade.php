@@ -53,7 +53,9 @@
 		</div>
 	</nav>
 
-	@yield('content')
+    <div style="margin:60px">
+	    @yield('content')
+    </div>
     @yield('footer')
 
 	<!-- Scripts -->
