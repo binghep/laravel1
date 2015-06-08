@@ -5,7 +5,7 @@
         <article>
             <h1>Edit: {{$article->title}}</h1> <span>  {{$article->published_at}}</span>
 
-            {!! Form::open(['method'=>'PATCH','url'=>'articles/'.$article->id]) !!}
+            {!! Form::model($article, ['method'=>'PATCH','url'=>'articles/'.$article->id]) !!}
             <!-- Title Form Input -->
             <div class="form-group">
                 {!! Form::label('title','Title:') !!}
@@ -32,13 +32,7 @@
 
             {!! Form::close() !!}
 
-            {{--{{var_dump($errors)}}--}}
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    @foreach ($errors->all() as $error)
-                        <li>{{$error}}</li>
-                    @endforeach
-                </div>
-            @endif
+            @include('errors.list')
+
         </article>
 @endsection
