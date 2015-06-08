@@ -32,24 +32,24 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('contact', 'PagesController@contact');
 Route::get('about', 'PagesController@about');
-Route::get('third', 'PagesController@third');
-Route::get('fourth', 'PagesController@fourth');
-Route::get('fifth', 'PagesController@fifth');
-
-Route::get('sixth', 'PagesController@sixth');
-
-
-Route::get('home', 'HomeController@index');
+//Route::get('third', 'PagesController@third');
+//Route::get('fourth', 'PagesController@fourth');
+//Route::get('fifth', 'PagesController@fifth');
+//
+//Route::get('sixth', 'PagesController@sixth');
+//
+//
+//Route::get('home', 'HomeController@index');
 
 Route::controllers([
-    'auth' => 'Auth\AuthController',
+    'auth' => 'Auth\AuthController',   //http://localhost:8000/auth/register or http://localhost:8000/auth/foo
     'password' => 'Auth\PasswordController',
 ]);
 
 
-Route::get('api', function(){
-    return 'welcome to our api!';
-});
+//Route::get('api', function(){
+//    return 'welcome to our api!';
+//});
 
 //Route::get('articles', 'ArticlesController@index');
 //Route::get('articles/create', 'ArticlesController@create');

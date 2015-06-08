@@ -35,4 +35,21 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
+    public function getRegister()
+    {
+        return view('auth.register');
+    }
+
+    public function getFoo()
+    {
+        return 'foobar';
+    }
+
+//post to http://localhost:8000/auth/bar
+    public function postBar()
+    {
+        return 'bar';
+    }
+
+    
 }
