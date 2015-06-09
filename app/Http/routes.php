@@ -39,7 +39,7 @@ Route::get('about', 'PagesController@about');
 //Route::get('sixth', 'PagesController@sixth');
 //
 //
-//Route::get('home', 'HomeController@index');
+Route::get('home', 'HomeController@index');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',   //http://localhost:8000/auth/register or http://localhost:8000/auth/foo

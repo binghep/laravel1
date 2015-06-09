@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Request;
 class ArticlesController extends Controller
 {
 
+    public function __construct()
+    {
+        $this->middleware('auth', ['only'=>'create']); //use 'auth' middleware on every route(or 'create' route) in this ArticlesController. Now, /articles/create page is only available to users who logged in. redirect to login page. See kernel.php in App/Http
+    }
     public function index()
     {
 //        return \Auth::user();

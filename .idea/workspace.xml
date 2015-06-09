@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5e677448-2a4d-479a-ac8c-dffb6f3be745" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/database.sqlite" afterPath="$PROJECT_DIR$/storage/database.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/articles/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/articles/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/articles/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
     </list>
     <ignored path="first_laravel_projec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArticlesController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0" vertical-offset="459" max-vertical-offset="2100">
-              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.46619216" vertical-offset="532" max-vertical-offset="1375">
+              <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -80,12 +76,13 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_06_07_064340_create_articles_table.php" />
         <option value="$PROJECT_DIR$/app/Article.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/articles/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/articles/edit.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -361,6 +358,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="first_laravel_projec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="first_laravel_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -538,41 +557,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.032258" vertical-offset="1598" max-vertical-offset="2125">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/compile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2296015" vertical-offset="648" max-vertical-offset="1175">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2732449" vertical-offset="1198" max-vertical-offset="1925">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.166983" vertical-offset="2723" max-vertical-offset="3250">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/queue.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2450">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/services.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9962049" vertical-offset="525" max-vertical-offset="1075">
@@ -619,13 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3558719" vertical-offset="0" max-vertical-offset="843">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="843">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -934,21 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4365362" vertical-offset="532" max-vertical-offset="1375">
-          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
-          <folding>
-            <marker date="1433758973000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1433758973000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1433758973000" expanded="true" signature="-1:-1" placeholder="//..." />
-            <marker date="1433758973000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1433758973000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1433758973000" expanded="true" signature="-1:-1" placeholder="//..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39460784" vertical-offset="1153" max-vertical-offset="3550">
@@ -1015,22 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.12692764" vertical-offset="532" max-vertical-offset="1375">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <marker date="1433844191000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder=" Create a new authentication controller instance. ..." />
-            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31672597" vertical-offset="8" max-vertical-offset="1225">
@@ -1047,10 +993,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6441281" vertical-offset="107" max-vertical-offset="950">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder=" The application's global HTTP middleware stack. ..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder=" The application's route middleware. ..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1550">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder=" Get the unique identifier for the user. ..." />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder=" Get the password for the user. ..." />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder=" Get the token value for the &quot;remember me&quot; session. ..." />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder=" Set the token value for the &quot;remember me&quot; session. ..." />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder=" Get the column name for the &quot;remember me&quot; token. ..." />
+            <marker date="1432925809000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1648873" vertical-offset="982" max-vertical-offset="1825">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2158957" vertical-offset="0" max-vertical-offset="1375">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          <folding>
+            <marker date="1427231216000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder=" The Guard implementation. ..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder=" Create a new filter instance. ..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder=" Handle an incoming request. ..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5041518" vertical-offset="0" max-vertical-offset="1375">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <marker date="1433844191000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder=" Create a new authentication controller instance. ..." />
+            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433844191000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.118623964" vertical-offset="100" max-vertical-offset="1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1433486788000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433486788000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433486788000" expanded="true" signature="-1:-1" placeholder=" Create a new controller instance. ..." />
+            <marker date="1433486788000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433486788000" expanded="true" signature="-1:-1" placeholder=" Show the application dashboard to the user. ..." />
+            <marker date="1433486788000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="843">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="19" />
+          <folding>
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1427231216000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0" vertical-offset="459" max-vertical-offset="2100">
-          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.2669039" vertical-offset="75" max-vertical-offset="2200">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <marker date="1433846634000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder=" Save a new article; ..." />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="//..." />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433846634000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46619216" vertical-offset="532" max-vertical-offset="1375">
+          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
           <folding />
         </state>
       </provider>
