@@ -1,9 +1,9 @@
-<?php namespace App\Http\Controllers\Auth;
+<?php namespace App\Http\Controllers\Auth; //if call things from other namespaces, needs fully qualified name.
 
 use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;  //use 'use' to do alias. now Controller, Guard, Registrar, and AuthenticatesAndRegistersUsers can be used as aliases.
 
 class AuthController extends Controller {
 
@@ -20,6 +20,7 @@ class AuthController extends Controller {
 
 	use AuthenticatesAndRegistersUsers;
 
+    protected $redirectTo='/articles';
 	/**
 	 * Create a new authentication controller instance.
 	 *
@@ -27,7 +28,7 @@ class AuthController extends Controller {
 	 * @param  \Illuminate\Contracts\Auth\Registrar  $registrar
 	 * @return void
 	 */
-	public function __construct(Guard $auth, Registrar $registrar)
+	public function __construct(Guard $auth, Registrar $registrar) //registrar is an interface here. the one passed in is App/Services/Registrar.php
 	{
 		$this->auth = $auth;
 		$this->registrar = $registrar;
@@ -35,10 +36,6 @@ class AuthController extends Controller {
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
 
-    public function getRegister()
-    {
-        return view('auth.register');
-    }
 
     public function getFoo()
     {
@@ -51,5 +48,5 @@ class AuthController extends Controller {
         return 'bar';
     }
 
-    
+
 }

@@ -17,9 +17,10 @@
     {{--{!! Form::text('name') !!}--}}
     {{--{!! Form::close() !!}--}}
 
+    @include('errors.list')
+
     {!! Form::open(['url'=>'articles']) !!}
         @include('articles._form', ['submitButtonText'=>'Add Article'])
     {!! Form::close() !!}
 
-    @include('errors.list')
 @endsection

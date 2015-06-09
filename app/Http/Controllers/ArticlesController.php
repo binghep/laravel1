@@ -11,6 +11,8 @@ class ArticlesController extends Controller
 
     public function index()
     {
+//        return \Auth::user();
+//        return \Auth::user()->name;
         date_default_timezone_set("America/Los_Angeles");
         //$articles=Article::all();                         //this is in ascending order
         //$articles = Article::latest('published_at')->get(); //this is sort by published_at column in descending order
@@ -37,7 +39,7 @@ class ArticlesController extends Controller
     public function create()
     {
         $carbon_time = Carbon::createFromFormat('Y-m-d', date('Y-m-d'));
-        return view('articles.create', compact($carbon_time));
+        return view('articles.create', compact('carbon_time'));
     }
 
     /**
@@ -49,15 +51,17 @@ class ArticlesController extends Controller
     public static function store(ArticleRequest $request)
     {
         //validation (triggered before executing this method). the body will never fire unless our validation passed.
-
+        $article = new Article($request->all());
+        \Auth::user()->articles()->save($article);
         //$title=Request::get('title');
 //        $body=Request::get('body');
 //        $title=$input['title'];
 //        $article=new Article;
 //        $article->title=$title;
 //        $article->body=$body;
-        $request['published_at']=Carbon::now();
-        Article::create($request->all());
+
+        //$request['published_at']=Carbon::now();
+        //Article::create($request->all());
         return redirect('articles');
     }
 
