@@ -40,4 +40,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     {
         return $this->hasMany('App\Article');
     }
+
+//    public function setPasswordAttribute($password)
+//    {
+//        $this->attributes['password']=mcrpyt($password);
+//    }//$user->password='foobar';
 }

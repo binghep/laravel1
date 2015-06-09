@@ -9,10 +9,17 @@ use Illuminate\Support\Facades\Request;
 class ArticlesController extends Controller
 {
 
+    /**
+     *
+     */
     public function __construct()
     {
         $this->middleware('auth', ['only'=>'create']); //use 'auth' middleware on every route(or 'create' route) in this ArticlesController. Now, /articles/create page is only available to users who logged in. redirect to login page. See kernel.php in App/Http
     }
+
+    /**
+     * @return \Illuminate\View\View
+     */
     public function index()
     {
 //        return \Auth::user();
@@ -27,11 +34,16 @@ class ArticlesController extends Controller
         return view('articles.index', compact('articles'));
     }
 
-    public function show($id)
+    /**
+     * @param Article $article
+     * @return \Illuminate\View\View
+     */
+    public function show(Article $article)
     {
-        $article = Article::findOrFail($id);
-        $year = $article->created_at->year;
-        $day = $article->created_at->addDays(8)->diffForHumans();
+        //dd($id);
+        //$article = Article::findOrFail($id);
+        //$year = $article->created_at->year;
+        //$day = $article->created_at->addDays(8)->diffForHumans();
 
         //return $id;
 //        if (is_null($article)){
@@ -40,10 +52,15 @@ class ArticlesController extends Controller
         return view('articles.show', compact('article'));
     }
 
+    /**
+     * Display Create page
+     *
+     * @return \Illuminate\View\View
+     */
     public function create()
     {
-        $carbon_time = Carbon::createFromFormat('Y-m-d', date('Y-m-d'));
-        return view('articles.create', compact('carbon_time'));
+        //$carbon_time = Carbon::createFromFormat('Y-m-d', date('Y-m-d'));
+        return view('articles.create');
     }
 
     /**
@@ -69,16 +86,28 @@ class ArticlesController extends Controller
         return redirect('articles');
     }
 
-    public function edit($id)
+    /**
+     * display the edit page of an article
+     *
+     * @param Article $article
+     * @return \Illuminate\View\View
+     */
+    public function edit(Article $article)
     {
-        $article = Article::findOrFail($id);
-        //dd($article);
+        //$article = Article::findOrFail($id);
         return view('articles.edit', compact('article'));
     }
 
-    public function update($id, ArticleRequest $request)//reflection, ok, laravel sees that we want a request object, we are gonna instatiate it and pass it in to this function.
+    /**
+     * update existing article
+     *
+     * @param Article $article
+     * @param ArticleRequest $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function update(Article $article, ArticleRequest $request)//reflection, ok, laravel sees that we want a request object, we are gonna instatiate it and pass it in to this function.
     {
-        $article = Article::findOrFail($id);
+        //$article = Article::findOrFail($id);
         $article->update($request->all());
         return redirect('articles');
     }
