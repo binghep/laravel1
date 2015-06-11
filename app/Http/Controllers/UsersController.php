@@ -2,7 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\User;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller {
@@ -45,10 +45,12 @@ class UsersController extends Controller {
 	 */
 	public function show($id)
 	{
-        $user=User::findOrFail($id);
-        dd('ss');
+
+        $user=User::where('id','=',$id)->firstOrFail(); //if $id is primary key then--User::findOrFail($id)
+        //dd($user);
+
         $articles=$user->articles;
-		return view('users.show', compact('articles'));
+		return view('users.show', compact('articles', 'user'));
 	}
 
 	/**
