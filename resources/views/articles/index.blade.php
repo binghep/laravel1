@@ -2,8 +2,8 @@
 
 @section('content')
     <h1>Articles</h1>
+    <button onclick="location.href='{{action('ArticlesController@create')}}'" class='float-right'>Publish Article</button>
     <hr/>
-
     @foreach($articles as $article)
         <article>
             <h2>

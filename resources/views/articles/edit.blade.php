@@ -3,6 +3,8 @@
 @section('content')
 
         <article>
+            <button onclick='location.href="{{ URL::previous() }}"' >Back</button>
+
             <h1>Edit: {{$article->title}}</h1>
 
             @include('errors.list')
