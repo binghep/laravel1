@@ -35,6 +35,9 @@
 				<ul class="nav navbar-nav">
 					<li><a href="{{ url('/') }}">Home</a></li>
 				</ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="{{action('UsersController@show',\Auth::user()->id) }}">My Articles</a></li>
+                </ul>
 
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())

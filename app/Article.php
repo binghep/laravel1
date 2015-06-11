@@ -42,5 +42,8 @@ class Article extends Model {
         return $this->belongsTo('App\User');
     }
 
-
+    public function owner_name()
+    {
+        return "jiayi";//$this->owner()->name;
+    }
 }

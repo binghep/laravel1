@@ -10,7 +10,7 @@
                 {{--<a href="/articles/{{$article->id}}">{{$article->title}}</a>--}}
                 <a href="{{action('ArticlesController@show', [$article->id])}}">{{$article->title}}</a>
             </h2>
-            <span style="color:grey">  Creation Date: {{$article->created_at}}</span>
+            <span style="color:grey">  Posted at {{$article->created_at}} By <a href="{{action('UsersController@show', [$article->user_id])}}">{{$article->owner_name()}}</a></span>
 
             <div class="body">
                 {{$article->body}}
