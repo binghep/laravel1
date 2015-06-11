@@ -24,7 +24,7 @@ class ArticlesController extends Controller
     {
 //        return \Auth::user();
 //        return \Auth::user()->name;
-        date_default_timezone_set("America/Los_Angeles");
+
         //$articles=Article::all();                         //this is in ascending order
         //$articles = Article::latest('published_at')->get(); //this is sort by published_at column in descending order
         //$articles = Article::latest('published_at')->published()->get();
@@ -38,10 +38,9 @@ class ArticlesController extends Controller
      * @param Article $article
      * @return \Illuminate\View\View
      */
-    public function show(Article $article)
+    public function show($id)
     {
-        //dd($id);
-        //$article = Article::findOrFail($id);
+        $article = Article::findOrFail($id);
         //$year = $article->created_at->year;
         //$day = $article->created_at->addDays(8)->diffForHumans();
 
@@ -49,8 +48,10 @@ class ArticlesController extends Controller
 //        if (is_null($article)){
 //            abort(404);
 //        }
+//        dd($article->owner()->getRelated());//return the model structure: User
         return view('articles.show', compact('article'));
     }
+
 
     /**
      * Display Create page
@@ -96,9 +97,9 @@ class ArticlesController extends Controller
      * @param Article $article
      * @return \Illuminate\View\View
      */
-    public function edit(Article $article)
+    public function edit($id)
     {
-        //$article = Article::findOrFail($id);
+        $article = Article::findOrFail($id);
         return view('articles.edit', compact('article'));
     }
 
@@ -109,9 +110,9 @@ class ArticlesController extends Controller
      * @param ArticleRequest $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Article $article, ArticleRequest $request)//reflection, ok, laravel sees that we want a request object, we are gonna instatiate it and pass it in to this function.
+    public function update($id, ArticleRequest $request)//reflection, ok, laravel sees that we want a request object, we are gonna instatiate it and pass it in to this function.
     {
-        //$article = Article::findOrFail($id);
+        $article = Article::findOrFail($id);
         $article->update($request->all());
 
         flash()->success('Your article has been updated');//->important(); //green bg

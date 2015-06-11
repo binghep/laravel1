@@ -28,7 +28,8 @@ use \App\Http\Controllers\WelcomeController;
 //    }
 //}
 //
-Route::get('/', 'WelcomeController@index');
+//Route::get('/', 'WelcomeController@index');
+Route::get('/', 'ArticlesController@index');
 
 Route::get('contact', 'PagesController@contact');
 Route::get('about', 'PagesController@about');
@@ -57,3 +58,5 @@ Route::controllers([
 //Route::post('articles','ArticlesController@store');
 
 Route::resource('articles','ArticlesController');
+
+Route::get('user/{id}', 'UsersController@show');

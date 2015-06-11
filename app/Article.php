@@ -39,8 +39,11 @@ class Article extends Model {
      */
     public function owner()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User','user_id');//user_id is the foreign key in users table
     }
 
-
+    public function owner_name()
+    {
+        return $this->owner->name;
+    }
 }
