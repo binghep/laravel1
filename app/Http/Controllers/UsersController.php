@@ -46,7 +46,8 @@ class UsersController extends Controller {
 	public function show($id)
 	{
         $user=User::findOrFail($id);
-        $articles=$user->articles();
+        dd('ss');
+        $articles=$user->articles;
 		return view('users.show', compact('articles'));
 	}
 

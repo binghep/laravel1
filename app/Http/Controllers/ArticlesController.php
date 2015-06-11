@@ -40,7 +40,6 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-        //dd($id);
         $article = Article::findOrFail($id);
         //$year = $article->created_at->year;
         //$day = $article->created_at->addDays(8)->diffForHumans();
@@ -49,6 +48,7 @@ class ArticlesController extends Controller
 //        if (is_null($article)){
 //            abort(404);
 //        }
+//        dd($article->owner()->getRelated());//return the model structure: User
         return view('articles.show', compact('article'));
     }
 
