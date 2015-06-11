@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e677448-2a4d-479a-ac8c-dffb6f3be745" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="first_laravel_projec.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.11494253" vertical-offset="0" max-vertical-offset="870">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="1.118624" vertical-offset="582" max-vertical-offset="1950">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -441,6 +441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="6453" max-vertical-offset="19850">
           <caret line="274" column="24" selection-start-line="274" selection-start-column="20" selection-end-line="274" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,6 +527,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059311982" vertical-offset="0" max-vertical-offset="2650">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -533,6 +535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059311982" vertical-offset="0" max-vertical-offset="843">
           <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -721,24 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7755835" vertical-offset="818" max-vertical-offset="3625">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6858169" vertical-offset="1743" max-vertical-offset="3100">
           <caret line="88" column="26" selection-start-line="88" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55116695" vertical-offset="1368" max-vertical-offset="1950">
-          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -804,8 +793,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11494253" vertical-offset="0" max-vertical-offset="870">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4597701" vertical-offset="0" max-vertical-offset="870">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46263346" vertical-offset="810" max-vertical-offset="3625">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <marker date="1433901397000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" The Guard implementation. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" The registrar implementation. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Show the application registration form. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Handle a registration request for the application. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Show the application login form. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Handle a login request to the application. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Get the failed login message. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Log the user out of the application. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Get the post register / login redirect path. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder=" Get the path to the login route. ..." />
+            <marker date="1433901397000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.118624" vertical-offset="582" max-vertical-offset="1950">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
