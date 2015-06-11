@@ -145,6 +145,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+        'Laracasts\Flash\FlashServiceProvider' //-->added
 
 	],
 
@@ -195,6 +196,7 @@ return [
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form'=>'Illuminate\Html\FormFacade', //-->added
         'Html'=>'Illuminate\Html\HtmlFacade', //-->added
+        'Flash'=>'Laracasts\Flash\Flash' //-->added
     ],
 
 ];

@@ -83,6 +83,10 @@ class ArticlesController extends Controller
 
         //$request['published_at']=Carbon::now();
         //Article::create($request->all());
+
+        //flash('Your article has been created');//->important(); //blue bg
+        flash()->success('Your article has been created');//->important(); //green bg
+        //flash()->overlay('Your article has been successfully created.','Good job');
         return redirect('articles');
     }
 
@@ -109,6 +113,9 @@ class ArticlesController extends Controller
     {
         //$article = Article::findOrFail($id);
         $article->update($request->all());
+
+        flash()->success('Your article has been updated');//->important(); //green bg
+
         return redirect('articles');
     }
 }
