@@ -2,7 +2,7 @@
 
 @section('content')
         <article>
-            <button onclick='location.href="{{ URL::previous() }}"' >Back</button>
+            <button onclick='location.href="{{ action('ArticlesController@index')}}"' >Back</button>
 
             <h1>{{$article->title}}</h1>
 
